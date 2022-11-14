@@ -1,0 +1,71 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href=" {% static 'emsi/css/style.css'%} ">
+
+    <style>
+
+
+
+
+        .body-bg{
+           background: #077eb5;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #b838ef, #108dc7);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #ffffff, #1c5f94); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+        }
+        .btn-orange{
+            background: #3082fd;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #358bf3, #ae30fd);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #2d792a, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        }
+        .btn-selenium{
+            background: #0f0c29;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #346e2e, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+
+    </style>
+
+    <title>Home</title>
+</head>
+<body class='body-bg'>
+    <section class="container">
+
+         <nav class="navbar navbar-light bg-light ">
+        <p class="display-4 mx-auto bg-light"  >HOME</p>
+    </nav>
+
+
+        <div class="row">
+            <div class="col-lg-6" style="margin-top: 150px">
+                <img src="{% static 'emsi/images/employee.png' %}" class='img-fluid' alt="">
+            </div>
+
+
+            <div class="col-lg-6" style="margin-top: 250px">
+                <div class="card mb-3 shadow">
+                    <div class="card-header btn-orange pt-4">
+                        <p class="lead">Company Introduction</p>
+                    </div>
+
+                    <div class="card-body">
+
+                        <p class="lead text-justify">Emsi app for managing employees</p>
+                        <a href=" {% url 'emsi:login' %} " class="btn btn-block btn-selenium text-light"> Login &rarr; </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <nav class="navbar navbar-light bg-light " style="margin-top: 250px ">
+        <p class="display-4 mx-auto bg-light" >DEVELOPED BY ABDELKARIM ELHALLOUMI'S</p>
+    </nav>
+</body>
+</html>
